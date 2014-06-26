@@ -20,7 +20,8 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
     if(nrhs!=2) {
         mexErrMsgIdAndTxt("MyToolbox:myadd:nrhs","Two inputs required.");
     }
-    if(nlhs!=1) {
+
+    if(nlhs>1) {
         mexErrMsgIdAndTxt("MyToolbox:myadd:nlhs","One output required.");
     }
 
